@@ -7,7 +7,7 @@ from .base import *
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [139.59.143.246]
+ALLOWED_HOSTS = ['139.59.143.246']
 
 
 # Database
