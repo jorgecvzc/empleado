@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Modificar Empleado{% endblock title %}
+
+    
+{% block content %}
+    {% include 'includes/header.html' %}
+
+	<div class="grid-container">
+		<div class="grid-x">
+			<h1 class="cell">Modificar Empleado</h1>
+
+			<div class="cell">
+			<form method='POST' class="grid-x"> {% csrf_token %} 
+				<div class="cell large-6">
+					<label>
+						{{ form.as_p }}
+					</label>
+				</div>
+				</div>
+					<button class="button success" type ="submit">Guardar Cambios</button>
+				</div>
+			</form>
+			</div>
+		</div>
+	</div>
+
+{% endblock content %}
